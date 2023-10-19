@@ -67,7 +67,7 @@ const CurrentTrack = () => {
               </Link>
             </Label>
             <Label className="text-md" >
-              <Link href={songQuery.data.item?.artists[0]?.external_urls.spotify ?? ''}>
+              <Link target="_blank" href={songQuery.data.item?.artists[0]?.external_urls.spotify ?? ''}>
                 {songQuery?.data.item?.album?.name}
               </Link>
             </Label>
